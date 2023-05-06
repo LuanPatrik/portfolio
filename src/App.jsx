@@ -11,6 +11,7 @@ import Csharp from './components/img/csharp.png';
 import MySql from './components/img/mysql.png';
 import PowerBi from './components/img/power-bi.png';
 import Trello from './components/img/trello.png';
+import QrCode from './components/img/qrCode.png';
 
 function App() {
 
@@ -77,7 +78,6 @@ function App() {
             <img src={PowerBi} alt="PowerBi" />
           </div>
         </div>
-
       </div>
 
       <div id='projects'>
@@ -85,11 +85,58 @@ function App() {
         <br />
 
         <div className="list-projects">
-          <div class="list">
-            <img src={"img_avatar.png"} alt="Avatar" style="width:100%" />
+          <div class="list" id='box'>
+            <h3>Quiz React</h3>
+            <img src={QrCode} alt="QRCode" />
             <div class="description">
-              <h4><b>John Doe</b></h4>
-              <p>Architect & Engineer</p>
+              <p>Nesse projeto, você conseguirá gerar QR Codes e baixa-los. Basta inserir no campo texto alguma informação ou link do que desejar.</p>
+            </div>
+            <div className="btn-acess">
+              <button><a href="https://github.com/LuanPatrik/Quiz" target="_blank">Acesse Aqui!</a></button>
+            </div>
+          </div>
+
+          <div class="list" id='box'>
+            <h3>Estante Tech</h3>
+            <img src={QrCode} alt="QRCode" />
+            <div class="description">
+              <p>Software para desktop com o intuito de auxiliar no emprestimo e devolução de livros</p>
+            </div>
+            <div className="btn-acess">
+              <button><a href="https://github.com/LuanPatrik/EstanteTech" target="_blank">Acesse Aqui!</a></button>
+            </div>
+          </div>
+
+          <div class="list" id='box'>
+            <h3>Tabela do Brasileirão</h3>
+            <img src={QrCode} alt="QRCode" />
+            <div class="description">
+              <p>Nesse projeto, você conseguirá gerar QR Codes e baixa-los. Basta inserir no campo texto alguma informação ou link do que desejar.</p>
+            </div>
+            <div className="btn-acess">
+              <button><a href="https://github.com/LuanPatrik/brasileirao" target="_blank">Acesse Aqui!</a></button>
+            </div>
+          </div>
+
+          <div class="list" id='box'>
+            <h3>Busca CEP</h3>
+            <img src={QrCode} alt="QRCode" />
+            <div class="description">
+              <p>Nesse projeto, você conseguirá gerar QR Codes e baixa-los. Basta inserir no campo texto alguma informação ou link do que desejar.</p>
+            </div>
+            <div className="btn-acess">
+              <button><a href="https://github.com/LuanPatrik/busca-cep" target="_blank">Acesse Aqui!</a></button>
+            </div>
+          </div>
+
+          <div class="list" id='box'>
+            <h3>Gerador de QR Code</h3>
+            <img src={QrCode} alt="QRCode" />
+            <div class="description">
+              <p>Nesse projeto, você conseguirá gerar QR Codes e baixa-los. Basta inserir no campo texto alguma informação ou link do que desejar.</p>
+            </div>
+            <div className="btn-acess">
+              <button><a href="https://github.com/LuanPatrik/Gerador-QRCode" target="_blank">Acesse Aqui!</a></button>
             </div>
           </div>
 
