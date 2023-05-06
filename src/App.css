@@ -5,27 +5,31 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .container{
     width: 100%;
-    height: 100vh;
-    background-color: #0E1114;
+    height: 100%;
+    background-color: #012025;
+    font-family: 'Gagalin', sans-serif;
 }
 
 header{
-    background-color: #2AC17B;
-    /* background-color: #2A446B; Azul*/
-    /* background-color: #03FA6E; Verde Neon*/
+    background-color: #15af9d;
     width: 100%;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: absolute;
+    gap: 5rem;
 }
 
 .logo img{
-    width: 73px;
-    height: 73px;
+    width: 7em;
+    height: 7em;
     border-radius: 100px;
     margin-left: 5em;
 }
@@ -40,17 +44,13 @@ li{
     list-style-type: none;
     cursor: pointer;
     color: #FFF;
-    font-size: 18px;
+    font-size: 22px;
     padding-left: 2rem;
 }
 
 li a{
     text-decoration: none;
     color: #FFF;
-}
-
-section{
-    background-color: #0E1114;
 }
 
 #home{
@@ -61,7 +61,6 @@ section{
 .information{
     width: 50%;
     height: 100vh;
-    font-family: 'Gagalin', sans-serif;
     color: #FFF;
     display: flex;
     flex-direction: column;
@@ -74,20 +73,19 @@ section{
     text-align: center;
     width: 70%;
     padding: 2em;
-    border: solid 1px #58ce97;
+    border: solid 1px #078a85;
     border-radius: 10px;
     font-size: 18px;
 }
 
-.profile h2{
+.information h1{
     border-right: 4px solid;
-    width: 11ch;
+    width: 9ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(11),
+    animation: typing 2s steps(9),
     blinking 0.5s infinite step-end alternate;
     color: #FFF;
-    font-family: 'Gagalin', sans-serif;
 }
 
 @keyframes typing{
@@ -102,6 +100,7 @@ section{
     }
 }
 
+
 .profile{
     display: flex;
     align-items: center;
@@ -110,14 +109,18 @@ section{
     width: 50%;
 }
 
+.profile h2{
+    color: #FFF;
+    margin: 5px;
+}
+
 .card{
-    background-color: #1d6b47;
     padding: 4em;
     border-radius: 10px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-profile{
@@ -133,7 +136,6 @@ section{
 .social{
     display: flex;
     flex-direction: row;
-    border-top: solid 1px #FFF;
 }
 
 #skills{
@@ -145,21 +147,22 @@ section{
 }
 
 .languages{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5em;
+}
+
+.languages img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    /* box-shadow: -2px 3px 29px -2px rgba(0,0,0,0.75); */
 }
 
 #card{
-    background-color: #D9D9D9;
-    width: 6em;
-    height: 6em;
-    border-radius: 8px;
-    margin-right: 10px;
-}
-
-.js{
-    background-color: #F7DF1E;
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
 }
 
 footer{
@@ -169,7 +172,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 
