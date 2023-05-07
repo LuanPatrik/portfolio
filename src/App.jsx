@@ -12,6 +12,10 @@ import MySql from './components/img/mysql.png';
 import PowerBi from './components/img/power-bi.png';
 import Trello from './components/img/trello.png';
 import QrCode from './components/img/qrCode.png';
+import Quiz from './components/img/quiz.png';
+import BuscaCep from './components/img/busca-cep.png';
+import Brasileirao from './components/img/brasileirao.png';
+import EstanteTech from './components/img/estanteTech2.png';
 
 function App() {
 
@@ -31,10 +35,11 @@ function App() {
       <div id='home'>
         <div className="information">
           <h1>Sobre Mim</h1>
+          <br />
           <p>
             Desenvolvedor de software e admirador de BI.<br />
-            Atualmente atuo como estagiário em Desenvolvimento Web, <br />sou membro da empresa júnior OneBit do IFMG - 
-            Campus São João Evangelista com o cargo de Diretor do setor <br />de Projetos. Além disso, ocupo as posições 
+            Atualmente atuo como estagiário em Desenvolvimento Web, sou membro da empresa júnior OneBit do IFMG - 
+            Campus São João Evangelista com o cargo de Diretor do setor de Projetos. Além disso, ocupo as posições 
             de representante de turma e membro do colegiado do Curso Bacharelado em Sistemas de Informação.
           </p>
         </div>
@@ -45,7 +50,7 @@ function App() {
 
             </div>
 
-            <h2>Luan Patrik</h2>
+            <h1>Luan Patrik</h1>
             <div className="social">
               <a href="https://github.com/LuanPatrik" target="_blank"><img src={GitHub} alt="GitHub" /></a>
               <a href="https://www.linkedin.com/in/luan-patrik-873a41185/" target="_blank"><img src={Linkedin} alt="GitHub" /></a>
@@ -83,14 +88,18 @@ function App() {
       <div id='projects'>
         <h1>Projetos</h1>
         <br />
+        <br />
 
         <div className="list-projects">
           <div class="list" id='box'>
-            <h3>Quiz React</h3>
-            <img src={QrCode} alt="QRCode" />
+            <h3>Quiz ReactJS</h3>
+            <br />
+            <img src={Quiz} alt="QRCode" />
+            <br />
             <div class="description">
-              <p>Nesse projeto, você conseguirá gerar QR Codes e baixa-los. Basta inserir no campo texto alguma informação ou link do que desejar.</p>
+              <p>O projeto é um Quiz de multiplas escolhas referente ao reactjs. São 3 páginas simples e foram utilizados as rotas para navegar entre elas.</p>
             </div>
+            <br />
             <div className="btn-acess">
               <button><a href="https://github.com/LuanPatrik/Quiz" target="_blank">Acesse Aqui!</a></button>
             </div>
@@ -98,10 +107,13 @@ function App() {
 
           <div class="list" id='box'>
             <h3>Estante Tech</h3>
-            <img src={QrCode} alt="QRCode" />
+            <br />
+            <img src={EstanteTech} alt="QRCode" />
+            <br />
             <div class="description">
-              <p>Software para desktop com o intuito de auxiliar no emprestimo e devolução de livros</p>
+              <p>Software para desktop com o intuito de auxiliar no emprestimo e devolução de livros.</p>
             </div>
+            <br />
             <div className="btn-acess">
               <button><a href="https://github.com/LuanPatrik/EstanteTech" target="_blank">Acesse Aqui!</a></button>
             </div>
@@ -109,10 +121,13 @@ function App() {
 
           <div class="list" id='box'>
             <h3>Tabela do Brasileirão</h3>
-            <img src={QrCode} alt="QRCode" />
+            <br />
+            <img src={Brasileirao} alt="QRCode" />
+            <br />
             <div class="description">
-              <p>Nesse projeto, você conseguirá gerar QR Codes e baixa-los. Basta inserir no campo texto alguma informação ou link do que desejar.</p>
+              <p>O projeto conta com apenas 1 página refletindo a tabela atual do Campeonato Brasileiro.</p>
             </div>
+            <br />
             <div className="btn-acess">
               <button><a href="https://github.com/LuanPatrik/brasileirao" target="_blank">Acesse Aqui!</a></button>
             </div>
@@ -120,9 +135,15 @@ function App() {
 
           <div class="list" id='box'>
             <h3>Busca CEP</h3>
-            <img src={QrCode} alt="QRCode" />
+            <br />
+            <img src={BuscaCep} alt="QRCode" />
+            <br />
             <div class="description">
-              <p>Nesse projeto, você conseguirá gerar QR Codes e baixa-los. Basta inserir no campo texto alguma informação ou link do que desejar.</p>
+              <p>Neste projeto, você poderá consultar CEP automaticamente a partir de uma simples página da web. 
+                Tudo o que você precisa fazer é informar o CEP desejado e, ao sair do campo de texto, uma consulta 
+                será realizada na API VIA CEP preenchendo os dados encontrados.
+              </p>
+              <br />
             </div>
             <div className="btn-acess">
               <button><a href="https://github.com/LuanPatrik/busca-cep" target="_blank">Acesse Aqui!</a></button>
@@ -131,10 +152,13 @@ function App() {
 
           <div class="list" id='box'>
             <h3>Gerador de QR Code</h3>
+            <br />
             <img src={QrCode} alt="QRCode" />
+            <br />
             <div class="description">
               <p>Nesse projeto, você conseguirá gerar QR Codes e baixa-los. Basta inserir no campo texto alguma informação ou link do que desejar.</p>
             </div>
+            <br />
             <div className="btn-acess">
               <button><a href="https://github.com/LuanPatrik/Gerador-QRCode" target="_blank">Acesse Aqui!</a></button>
             </div>

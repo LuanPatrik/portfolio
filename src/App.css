@@ -24,7 +24,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+    position: relative;
     gap: 5rem;
 }
 
@@ -41,12 +41,13 @@ ul{
 }
 
 li{
+    display: flex;
     flex-direction: row;
     list-style-type: none;
     cursor: pointer;
     color: #FFF;
     font-size: 22px;
-    padding-left: 2rem;
+    margin-right: 5em;
 }
 
 li a{
@@ -112,7 +113,6 @@ li a{
 
 .profile h2{
     color: #FFF;
-    margin: 5px;
 }
 
 .card{
@@ -132,11 +132,19 @@ li a{
     height: 15em;
     background-color: darkgray;
     border-radius: 100%;
+    margin-bottom: 1em;
 }
 
 .social{
     display: flex;
     flex-direction: row;
+    gap: 10px;
+    margin-top: 0.75em;
+}
+
+.social img{
+    width: 2.5em;
+    height: 2.5em;
 }
 
 #skills{
@@ -145,19 +153,19 @@ li a{
     align-items: center;
     justify-content: center;
     color: #FFF;
+    margin-bottom: 5em;
 }
 
 .languages{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 5em;
+    gap: 3em;
 }
 
 .languages img{
     width: 100%;
     height: 100%;
     cursor: pointer;
-    /* box-shadow: -2px 3px 29px -2px rgba(0,0,0,0.75); */
 }
 
 #card{
@@ -174,8 +182,8 @@ li a{
 }
 
 #projects img{
-    width: 15rem;
-    height: 15rem;
+    width: 70%;
+    height: 70%;
 }
 
 .list-projects{
@@ -183,6 +191,7 @@ li a{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
 }
+
 
 #box{
     border: solid 1px #078a85;
@@ -223,8 +232,118 @@ footer{
     justify-content: center;
     position: relative;
     bottom: 0;
+    margin-top: 2em;
 }
 
 span{
     color: #FFF;
 }
+
+@media screen and (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        gap: 0;
+    }
+    
+    .logo{
+        display: none;
+    }
+
+    ul{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        gap: 2.5em;
+    }
+
+    li{
+        margin-right: 0;
+    }
+
+    #home{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .information{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .information p{
+        border: solid 1px #078a85;
+        border-radius: 10px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5em;
+    }
+
+    .languages{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.75em;
+    }
+
+    .languages img{
+        width: 90%;
+        height: 90%;
+        cursor: pointer;
+    }
+
+    .list-projects{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .languages{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2.5em;
+    }
+
+    .list-projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) { 
+    .languages{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 3em;
+    }
+
+    .list-projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
