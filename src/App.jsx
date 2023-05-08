@@ -12,10 +12,10 @@ import JavaScript from './components/img/javascript.png'
 import Linkedin from './components/img/linkedin.png'
 import MySql from './components/img/mysql.png'
 import PowerBi from './components/img/power-bi.png'
-import Profile from './components/img/profile.png'
+import Profile from './components/img/profile.jpeg'
 import QrCode from './components/img/qrCode.png'
 import Quiz from './components/img/quiz.png'
-import React from './components/img/reac.png'
+import React from './components/img/react.png'
 import Trello from './components/img/trello.png'
 
 
