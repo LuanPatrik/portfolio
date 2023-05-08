@@ -128,11 +128,16 @@ li a{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15em;
-    height: 15em;
-    background-color: darkgray;
+    width: 20em;
+    height: 20em;
     border-radius: 100%;
     margin-bottom: 1em;
+}
+
+.img-profile img{
+    width: 75%;
+    border: 2px solid #078a85;
+    border-radius: 10px;
 }
 
 .social{
@@ -251,6 +256,7 @@ span{
         justify-content: center;
         position: relative;
         gap: 0;
+        margin-bottom: 3em;
     }
     
     .logo{
