@@ -2,6 +2,22 @@ import { useState } from 'react';
 import './App.css';
 
 import Logo from './components/img/logo.png'
+import Brasileirao from './components/img/brasileirao.png'
+import BuscaCep from './components/img/busca-cep.png'
+import CSharp from './components/img/csharp.png'
+import EstanteTech from './components/img/estanteTech2.png'
+import GitHub from './components/img/github.png'
+import Instagram from './components/img/instagram.png'
+import JavaScript from './components/img/javascript.png'
+import Linkedin from './components/img/linkedin.png'
+import MySql from './components/img/mysql.png'
+import PowerBi from './components/img/power-bi.png'
+import Profile from './components/img/profile.png'
+import QrCode from './components/img/qrCode.png'
+import Quiz from './components/img/quiz.png'
+import React from './components/img/reac.png'
+import Trello from './components/img/trello.png'
+
 
 function App() {
 
@@ -33,14 +49,14 @@ function App() {
         <div className="profile">
           <div className="card">
             <div className="img-profile">
-              <img src="./src/components/img/profile.jpeg" alt="Foto do Luan" />
+              <img src={Profile} alt="Foto do Luan" />
             </div>
 
             <h1>Luan Patrik</h1>
             <div className="social">
-              <a href="https://github.com/LuanPatrik" target="_blank"><img src="./src/components/img/github.png" alt="GitHub" /></a>
-              <a href="https://www.linkedin.com/in/luan-patrik-873a41185/" target="_blank"><img src="./src/components/img/linkedin.png" alt="GitHub" /></a>
-              <a href="https://www.instagram.com/luan.p4trik/" target="_blank"><img src="./src/components/img/instagram.png" alt="GitHub" /></a>
+              <a href="https://github.com/LuanPatrik" target="_blank"><img src={GitHub} alt="GitHub" /></a>
+              <a href="https://www.linkedin.com/in/luan-patrik-873a41185/" target="_blank"><img src={Linkedin} alt="Linkedin" /></a>
+              <a href="https://www.instagram.com/luan.p4trik/" target="_blank"><img src={Instagram} alt="Instagram" /></a>
             </div>
           </div>
         </div>
@@ -51,22 +67,22 @@ function App() {
         <br />
         <div className="languages">
           <div className="reactjs" id='card'>
-            <img src="./src/components/img/react.png" alt="React" />
+            <img src={React} alt="React" />
           </div>
           <div className="csharp" id='card'>
-            <img src="./src/components/img/csharp.png" alt="Csharp" />
+            <img src={CSharp} alt="Csharp" />
           </div>
           <div className="js" id='card'>
-            <img src="./src/components/img/javascript.png" alt="Javascript" />
+            <img src={JavaScript} alt="Javascript" />
           </div>
           <div className="mysql" id='card'>
-            <img src="./src/components/img/mysql.png" alt="MySql" />
+            <img src={MySql} alt="MySql" />
           </div>
           <div className="trello" id='card'>
-            <img src="./src/components/img/trello.png" alt="Trello" />
+            <img src={Trello} alt="Trello" />
           </div>
           <div className="powerbi" id='card'>
-            <img src="./src/components/img/power-bi.png" alt="PowerBi" />
+            <img src={PowerBi} alt="PowerBi" />
           </div>
         </div>
       </div>
@@ -80,7 +96,7 @@ function App() {
           <div class="list" id='box'>
             <h3>Quiz ReactJS</h3>
             <br />
-            <img src="./src/components/img/quiz.png" alt="QRCode" />
+            <img src={Quiz} alt="QRCode" />
             <br />
             <div class="description">
               <p>O projeto é um Quiz de múltipla escolha referente ao reactjs. São 3 páginas simples e foram utilizados as rotas para navegar entre elas.</p>
@@ -94,7 +110,7 @@ function App() {
           <div class="list" id='box'>
             <h3>Estante Tech</h3>
             <br />
-            <img src="./src/components/img/estanteTech2.png" alt="QRCode" />
+            <img src={EstanteTech} alt="QRCode" />
             <br />
             <div class="description">
               <p>Software para desktop com o intuito de auxiliar no emprestimo e devolução de livros.</p>
@@ -108,7 +124,7 @@ function App() {
           <div class="list" id='box'>
             <h3>Tabela do Brasileirão</h3>
             <br />
-            <img src="./src/components/img/brasileirao.png" alt="QRCode" />
+            <img src={Brasileirao} alt="QRCode" />
             <br />
             <div class="description">
               <p>O projeto conta com apenas 1 página refletindo a tabela atual do Campeonato Brasileiro, para a elaboração da página foi utilizado a API Futebol.</p>
@@ -122,7 +138,7 @@ function App() {
           <div class="list" id='box'>
             <h3>Busca CEP</h3>
             <br />
-            <img src="./src/components/img/busca-cep.png" alt="QRCode" />
+            <img src={BuscaCep} alt="QRCode" />
             <br />
             <div class="description">
               <p>Neste projeto, você poderá consultar CEP automaticamente a partir de uma simples página da web. 
@@ -139,7 +155,7 @@ function App() {
           <div class="list" id='box'>
             <h3>Gerador de QR Code</h3>
             <br />
-            <img src="./src/components/img/qrCode.png" alt="QRCode" />
+            <img src={QrCode} alt="QRCode" />
             <br />
             <div class="description">
               <p>Nesse projeto, você conseguirá gerar QR Codes e baixa-los. Basta inserir no campo texto alguma informação ou link do que desejar.</p>
