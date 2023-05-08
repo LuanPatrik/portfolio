@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import './App.css';
 
+import Logo from './components/img/logo.png'
+
 function App() {
 
   return (
     <div className="container">
       <header>
         <div className="logo">
-          <img src="./src/components/img/logo.png" alt="Logo" />
+          <img src={Logo} alt="Logo" />
         </div>
         <ul>
           <li><a href="#home">Home</a></li>
